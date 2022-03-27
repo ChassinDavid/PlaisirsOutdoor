@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plaisirs Outdoor: Association conviviale de randonnée dans l'Hérault propose activités de plain-air avec des sorties et des séjours pour tous." />
+    <title>Plaisirs Outdoor Index</title>
+    <!--Lien bootstrap cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">   
+    <!--Lien css-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!-- Background image dans le body -->
+<body class="bg">
+    <!--Header comprenant 2 colonnes - Logo + titre et image d'exemple-->
+        <header class="container-fluid">
+            <div class="row ml-1">
+                <!--logo+titre et image en affichage responsive-->
+                <div class="bg-image img-fluid col-md-6 rounded-lg" style="background-image: url('https://mdbootstrap.com/img/new/fluid/nature/012.jpg');">
+                        <img src="./Pictures/logo-removebg-preview.png" alt="" class="img-fluid rounded-lg float-left">
+                        <div class="d-flex ">
+                            <h1 class="text-white mb-1">Plaisirs Outdoor</h1> 
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="./Pictures/IMG20220208114113.jpg" alt="" class="img-fluid rounded-lg displayNoneMD">
+                </div>
+            </div>  
+            <!--Barre de navigation-->  
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="./index.html">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link " href="./aSavoir.html">A Savoir</a></li>
+                        <li class="nav-item"><a class="nav-link " href="./programme.html">Programme</a></li>
+                        <li class="nav-item"><a class="nav-link " href="./contact.html">Nous contacter</a></li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="row">
+                <nav class="col-12 rounded-lg" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active"><a href="./index.html">Accueil</a></li>
+                        <li class="breadcrumb-item " aria-current="page">Programme</li>
+                        <li class="breadcrumb-item " aria-current="page">A savoir</li>
+                        <li class="breadcrumb-item " aria-current="page">Nous contacter</li>
+
+                    </ol>
+                </nav>
+            </div>
+
+        </header>
+        <main class="container-fluid ">
+            <!-- On va créer des cartes-->
+            <div class="row">
+                <!--Le titre affiché sur ma page-->
+                <h2 class="container-fluid bg-dark border-dark rounded text-white text-center ml-3 mr-3">Bienvenue</h2>
+                <div class="container-fluid bg-dark border-dark rounded text-white-50 text-center ml-3 mr-3">
+                    <h3>Plaisirs Outdoor: Association conviviale de randonnée dans l'hérault proposant des activités de plain-air avec des sorties et des séjours pour tous.</h3>
+                    <p class= text-justify>Vous trouverez ici les articles relatifs a notre association. N'hésitez pas a parcourir nos pages et notre porgramme pour vous tenir informé de nos prochains évènements.</p>
+                </div>
+                <!--Si c'est un affihage mobile (inferieur a sm) on met 1 colonne sinon 2 -->
+                <div class="row row-cols-1 row-cols-sm-2  ml-2 mr-2">
+                    <!--on fait un padding P-2 pour ne pas que les cartes se touchent s'il y en a deux-->
+                    <div class="col p-2">
+                        <!--déclaration de la carte-->
+                        <div class="card">
+                            <!--on rajoute l'image en haut de la carte-->
+                            <img src="./Pictures/libre_rando.jpg" alt="Programme" class="card-img-top rounded-lg">
+                            <!--Corps de la carte-->
+                            <div class="card-body">
+                                <!--Si on rajoutait un titre a cette carte?-->
+                                <h5 class="card-title">Programme</h5>
+                                <!--Contenu de mon article type carte-->
+                                <p class="card-text">
+                                    Programme des sorties à venir.N'hésitez pas a nous rejoindre dans nos prochaines aventures pédéstres a travers les sentiers de randonnées et découvrez de magnifiques panoramas en notre compagnie.
+                                </p>
+                                <!--un petit bouton pour en savoir plus-->
+                                <a href="./Programme.html" class="btn btn-primary">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <!--déclaration de la carte-->
+                        <div class="card">
+                            <!--on rajoute l'image en haut de la carte-->
+                            <img src="./Pictures/Balisage2.jpg" alt="A savoir" class="card-img-top rounded-lg">
+                            <!--Corps de la carte-->
+                            <div class="card-body">
+                                <!--Si on rajoutait un titre a cette carte?-->
+                                <h5 class="card-title">A savoir</h5>
+                                <!--Contenu de mon article type carte-->
+                                <p class="card-text">
+                                    Toutes les choses qui vous seront utiles pour la pratique de la randonnée. Ici, vous allez vous familiariser avec les divers équipements et autres balisages afin de dévaler les sentiers dans les meilleures conditions .
+                                </p>
+                                <!--un petit bouton pour en savoir plus-->
+                                <a href="./aSavoir.html" class="btn btn-primary">Lire la suite</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <!--déclaration de la carte-->
+                        <div class="card">
+                            <!--on rajoute l'image en haut de la carte-->
+                            <img src="./Pictures/contact.jpg" alt="Nous contacter" class="card-img-top rounded-lg">
+                            <!--Corps de la carte-->
+                            <div class="card-body">
+                                <!--Si on rajoutait un titre a cette carte?-->
+                                <h5 class="card-title">Nous contacter</h5>
+                                <!--Contenu de mon article type carte-->
+                                <p class="card-text">
+                                    Vous souhaitez nous rejoindre? rien de plus simple, cliquer sur la bannière et replissez le formulaire!!!
+                                </p>
+                                <!--un petit bouton pour en savoir plus-->
+                                <a href="#" class="btn btn-primary">Lire la suite</a>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="row bg-dark ml-3 mr-3">
+                <!--logo+ titre sur la meme ligne -->
+                <div class="img-fluid align-items-center">
+                    <img src="./Pictures/logo-removebg-preview.png" alt="Logo" class="rounded-0 float-left align" height="50" width="50">
+                    <div class="text-white-50">2022 Plaisirs Outdoor</div>
+                </div>
+                <div class="text-center container-fluid ">
+                <!--Liens sur une meme ligne si écran, l'un sous l'autre sur petit ecran-->
+                <a href = "#" class="col-sm-3">Qui sommes-nous?</a>
+                <a href = "#" class="col-sm-3">Nous contacter</a>
+                <a href = "https://www.ffrandonnee.fr/" class="col-md-1"><img src="./Pictures/ffrandonnee-logo.jpg" alt="ffrandonnée" height="40" width="40"></a>
+                <a href = "https://www.laregion.fr/" class="col-md-1"><img src="./Pictures/Occitanie.png" alt="Occitanie" height="40" width="40"></a>
+                
+            </div>  
+        </footer>
+    
+</body>
+</html>

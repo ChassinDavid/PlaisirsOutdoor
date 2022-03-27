@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plaisirs Outdoor: Association conviviale de randonnée dans l'Hérault propose activités de plain-air avec des sorties et des séjours pour tous." />
+    <title>Plaisirs Outdoor Programme</title>
+    <!--Lien bootstrap cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">   
+    <!--Lien css-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!-- Background image dans le body -->
+<body class="bg">
+    <!--Header comprenant 2 colonnes - Logo + titre et image d'exemple-->
+        <header class="container-fluid">
+            <div class="row ml-1">
+                <!--logo+titre et image en affichage responsive-->
+                <div class="bg-image img-fluid col-md-6 rounded-lg" style="background-image: url('https://mdbootstrap.com/img/new/fluid/nature/012.jpg');">
+                        <img src="./Pictures/logo-removebg-preview.png" alt="" class="img-fluid rounded-lg float-left">
+                        <div class="d-flex ">
+                            <h1 class="text-white mb-1">Plaisirs Outdoor</h1> 
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <img src="./Pictures/IMG20220208114113.jpg" alt="" class="img-fluid rounded-lg displayNoneMD">
+                </div>
+            </div>  
+            <!--Barre de navigation-->  
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="./index.html">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link " href="./aSavoir.html">A Savoir</a></li>
+                        <li class="nav-item"><a class="nav-link " href="./programme.html">Programme</a></li>
+                        <li class="nav-item"><a class="nav-link " href="./contact.html">Nous contacter</a></li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="row">
+                <nav class="col-12 rounded-lg" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item "><a href="./index.html">Accueil</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Programme</li>
+                        <li class="breadcrumb-item " aria-current="page">A savoir</li>
+                        <li class="breadcrumb-item " aria-current="page">Nous contacter</li>
+
+                    </ol>
+                </nav>
+            </div>
+
+        </header>
+        <main class="container-fluid ">
+            <!-- On va créer des cartes-->
+            <div class="row">
+                <!--Le titre affiché sur ma page-->
+                <h2 class="container-fluid bg-dark border-dark rounded text-white text-center ml-3 mr-3">Programme</h2>
+                <div class="container-fluid bg-dark border-dark rounded text-white-50 text-center ml-3 mr-3">
+                    <h3>Plaisirs Outdoor: Association conviviale de randonnée dans l'hérault proposant des activités de plain-air avec des sorties et des séjours pour tous.</h3>
+                    <p class= text-justify>Dans cette rubrique, vous trouverez notre porgramme pour vous tenir informé de nos prochains évènements.</p>
+                </div>
+                    <div class="container-fluid text-justify rounded bg-white text-dark-50 ml-3 mr-3 ">
+                        <H4 class="">Légende:</H4>
+                        <!--Dans un premier temps, une ligne avec un code couleur pour chaque type de rando-->
+                        <div class="row border-bottom border-dark">
+                            <div class="col bg-success rounded text-center m-3">Rando Bus</div>
+                            <div class="col bg-warning rounded text-center m-3 ">Rando Week-end</div>
+                            <div class="col bg-primary rounded text-center m-3">Rando Repas</div>
+                            <div class="col bg-secondary rounded text-center m-3">Autre </div>
+                        </div>    
+                        <!--On va tenter de mettre un bouton de type lien dont la couleur corresponds au type de rando avec la date puis le titre de l'activité sur la même ligne-->
+                        <!--Ensuite sur la ligne suivante, on notera la difficulté, dénivelé, durée-->
+                        <!--une derniere ligne avec le tarif, l'inscription et date buttoire-->
+                        <p></p>
+                        <div class="row">
+                            <button type="button" class="btn btn-primary">03 Avril 2022</button>
+                            <h4 class=""> Sortie randonnée sentier des 1000 marches et <a href="https://www.minervois-caroux.com/fr/decouvrir/site-de-vesoles.html">Saut de vezolles</a></h4>
+                        </div>
+                        <div class="container-fluid">
+                            <p class=""> Dénivelé 620M - distance 16.67Km - altitude maximale 993m - durée prévue 4H30 (+2H15 si variante) </p>
+                            <p>Un magnifique sentier qui, bien que difficile par endroit, nous emerveille par sa multitudes de petits bassins, et son saut haut de plus de 700m. Suivra un tour du lac de vezolles (variante) puis un retour oscillant entre prairies et forêts avec retour au point de répart.</p>
+                            <p>Sans réservation, RDV au parking de la commune de Riols coordonnées Google Maps: <a href="https://www.google.fr/maps/place/43%C2%B032'13.4%22N+2%C2%B048'01.4%22E/@43.5373185,2.7985354,17z/data=!4m5!3m4!1s0x0:0xe96b8ddfc7140515!8m2!3d43.5370423!4d2.8003818">43.537042317912, 2.8003817796707</a> a 9h00.</p>
+                        </div> 
+                        
+                        <div class="row">
+                            <button type="button" class="btn btn-success">14 mai 2022</button>
+                            <h4 class=""> Autour de <a href="https://www.cordessurciel.fr/bouger/randonnees/">Cordes-sur-ciel</a></h4>
+                        </div>
+                        <div class="container-fluid">
+                            <p class=""> Dénivelé 351M - distance 10.6Km - altitude maximale 299m - durée prévue 4H.</p>
+                            <p>Visitons ensemble cette magnifique cité médiévale et les sentiers vallonés du Causse.</p>
+                            <p><a href="#">Réservation obligatoire avant le 12 Avril 2022:</a>Tarif 15€ par personne comprenant le trajet en bus depuis le local de l'association.</p>
+                        </div>  
+                        <div class="row">
+                            <button type="button" class="btn btn-warning">18-19 Juin 2022</button>
+                            <h4 class=""> Week-end dans les pyrénées Etangs de Bassiès et <a href="http://refugedebassies.fr/">refuge de Bassiès</a></h4>
+                        </div>
+                        <div class="container-fluid">
+                            <p class=""> Dénivelé 910M - distance 15Km - altitude maximale 1647m - durée prévue 4H (+2H45 si variante). </p>
+                            <p>Venez découvrir les magnifiques etangs de bassiès dans les pyrénées au travers d'un séjour en deux étapes - montée, nuit au refuge, descente pour un magnifique week-end en plein air.</p>
+                            <p><a href="#">Réservation obligatoire avant le 20 mai 2022:</a>Tarif 80€ par personne comprenant le trajet en bus depuis le local de l'association, le repas au refuge et la nuit au refuge.</p>
+                        </div>  
+                        <div class="row">
+                            <button type="button" class="btn btn-secondary">17 décembre 2022</button>
+                            <h4 class=""> Assemblée générale</a></h4>
+                        </div>
+                        <div class="container-fluid">
+                            <p>Assemblée générale de l'association se déroulera au local de l'associassion le 17 décembre 2022. A l'issue de cette dernière, nous dégusterons ensemble le verre de l'amitié.</p>
+                         </div> 
+                         <div class="row">
+                            <button type="button" class="btn btn-secondary">10 décembre 2022</button>
+                            <h4 class=""> Repas de fin d'année</a></h4>
+                        </div>
+                        <div class="container-fluid">
+                            <p>Convivialité et repas dansant au programme de cette soirée. </p>
+                            <p><a href="#">Réservation obligatoire avant le 30 novembre 2022:</a>Tarif 30€ par personne. Menu affiché ulterieurement</p>
+                         </div> 
+                         
+                    </div>
+            </div>
+        </main>
+        <footer class="row bg-dark ml-3 mr-3">
+    
+                <!--logo+ titre sur la meme ligne -->
+                <div class="img-fluid align-items-center">
+                    <img src="./Pictures/logo-removebg-preview.png" alt="Logo" class="rounded-0 float-left align" height="50" width="50">
+                    <div class="text-white-50">2022 Plaisirs Outdoor</div>
+                </div>
+                <div class="text-center container-fluid ">
+                <!--Liens sur une meme ligne si écran, l'un sous l'autre sur petit ecran-->
+                <a href = "#" class="col-sm-3">Qui sommes-nous?</a>
+                <a href = "#" class="col-sm-3">Nous contacter</a>
+                <a href = "https://www.ffrandonnee.fr/" class="col-md-1"><img src="./Pictures/ffrandonnee-logo.jpg" alt="ffrandonnée" height="40" width="40"></a>
+                <a href = "https://www.laregion.fr/" class="col-md-1"><img src="./Pictures/Occitanie.png" alt="Occitanie" height="40" width="40"></a>
+                
+            </div>  
+        </footer>
+    
+</body>
+</html>
